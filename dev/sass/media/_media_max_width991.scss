@@ -1,0 +1,123 @@
+@media screen and (max-width: 991px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .container-xxl {
+        padding: 0;
+    }
+
+
+    header {
+        .navbar {
+            padding-top: 18px;
+            padding-bottom: 1px;
+
+        }
+
+        .btn {
+            padding: 21px 85px;
+            font-size: 99%;
+            margin-bottom: 60px;
+
+        }
+
+
+        a.navbar-brand {
+            width: 126px;
+            margin: 0 0 18px 1px;
+
+            img {
+                max-width: 100%;
+                height: 35px;
+
+            }
+        }
+
+
+
+        .nav-link.active {
+            font-size: 24px;
+            line-height: 222%;
+            padding: 0;
+            margin-bottom: 11px;
+
+        }
+
+        .navbar-nav {
+            padding: 38px 0 22px;
+        }
+
+
+        .navbar-collapse {
+            margin-left: -20px;
+            margin-right: -20px;
+            background: #363A4D
+        }
+
+    }
+
+    .first-screen-slider {
+        
+        .slick-slide {
+            background-position: center;
+            height: calc(100vh - 72px);
+            display: flex;
+            align-items: center;
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: 1;
+                background: linear-gradient(180deg, rgb(33 37 41 / 6%) 9%, rgb(0 0 0 / 11%) 100%);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+        }
+
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            
+        }
+
+        .first-screen-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            max-width: 290px;
+            
+
+        }
+        .mb {
+            margin-bottom: 50px;
+        }
+        .first-screen-subtitle {
+            font-size: 16px;
+            margin-bottom: 18px;
+            max-width: 270px;
+        }
+
+        .first-screen-btn {
+            padding: 20px 32px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 295px;
+        }
+
+
+    }
+    .calculation__img-box {
+    
+            display: none;
+    
+    }
+}
+
+

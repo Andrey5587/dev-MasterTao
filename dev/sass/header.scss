@@ -1,8 +1,75 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+.header {
+    height: 7vh;
+    padding: 15px 0;
+
+}
+
+header .navbar {
+    padding-top: 25px;
+    padding-bottom: 39px;
+
+}
+
+
+
+header {
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-light {
+        .navbar-nav {
+
+            margin: 4px auto 0;
+            max-width: 618px;
+            width: 100%;
+            justify-content: space-between;
+
+            .nav-link {
+                color: #fff;
+
+            }
+
+        }
+
+        .navbar-toggler-icon {
+            background-image: none;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .navbar-collapse {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+header {
+    .navbar-light {
+        .navbar-nav {
+            .nav-link:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    a:hover {
+        color: $color-secondary;
+    }
+}
+
+.btn {
+
+    padding: 13px 25px;
+    margin-right: 4px;
+    margin-left: 2px;
+
 }

@@ -1,0 +1,243 @@
+.calculation {
+    overflow-x: clip;
+    margin-bottom: 113px;
+
+    .container {
+        position: relative;
+
+        .calculation__img-box {
+            position: absolute;
+            right: -5px;
+            bottom: -127px;
+
+            img {
+                max-width: 560px;
+                width: 36vw;
+            }
+        }
+
+
+    }
+
+
+    .calculation-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 124.5%;
+        text-transform: uppercase;
+        margin-bottom: 59px;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 85px;
+            height: 2px;
+            background-color: $color-secondary;
+            margin: 12px 20px;
+        }
+    }
+
+    .calculation-form {
+        padding: 48px 35px;
+        background-color: #363A4D;
+        width: 100%;
+        max-width: 626px;
+        border-radius: 20px;
+    }
+
+    .calculation-row {
+        display: flex;
+    }
+
+    .calculation-column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            margin: 0 15px 18px;
+
+            label {
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 126%;
+                margin-bottom: 6px;
+            }
+
+
+
+            [for="fileinput"] {
+                border-radius: 10px;
+                border: 1px dashed rgba(255, 255, 255, 0.26);
+                width: 100%;
+                padding: 12px;
+                text-align: center;
+                font-weight: 400;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: $color-secondary;
+                    color: $color-secondary;
+
+                }
+            }
+
+            input {
+                padding: 19px 20px;
+                font-size: 15px;
+                line-height: 126%;
+                border: 1px solid #fff;
+                border-radius: 10px;
+                /*background: #FFF;*/
+                transition: 0.3s;
+
+                &::placeholder {
+                    color: #CBCBCB;
+                }
+
+                &:hover {
+                    border: 1px solid $color-primary;
+
+                }
+
+                &:active {
+                    border: 1px solid $color-primary;
+                }
+
+
+                &:focus-visible {
+                    outline: 1px solid $color-primary;
+                }
+
+
+            }
+
+            #fileinput {
+                display: none;
+            }
+
+            #file-Name {
+                margin: 9px 1px 8px 0px;
+            }
+        }
+
+
+
+
+
+
+
+        .has-checkbox {
+            padding-top: 19px;
+            margin-bottom: 8px;
+        }
+
+
+    }
+
+
+
+    .calculation-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 23px 31px 16px 32px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 252px;
+        margin-left: 18px;
+        &:hover {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
+
+}
+
+
+
+
+
+
+[type="radio"] {
+    &:checked {
+        +label {
+            &:before {
+                content: "•";
+                background: #fff;
+                font-size: 40px;
+                line-height: 21px;
+                color: #282B38;
+                text-align: center;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 2px 2px $color-primary;
+            }
+        }
+    }
+
+    +label {
+
+        &:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+.pos-checkbox {
+    padding-top: 21px;
+    margin-bottom: 6px;
+
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+    display: none;
+}
+
+[type="checkbox"]+label,
+[type="radio"]+label {
+    display: flex;
+    align-items: center;
+}
+
+[type="checkbox"]+label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-right: 9px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #282B38;
+}
+
+[type="radio"]+label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-right: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+[type="checkbox"]:checked+label::before {
+    background-image: url(assets/img/checked-checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[type="radio"]:checked+label::before {
+    background-image: url(assets/img/checked-radio.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+label:hover::before {
+    border: 1px solid orange;
+}

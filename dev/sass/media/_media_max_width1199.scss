@@ -1,2 +1,11 @@
 @media screen and (max-width: 1199px) {
+
+    header{
+        .navbar-light {
+            .navbar-nav {
+                margin: 0 auto;
+                max-width: 590px;
+            }
+        }
+    }
 }

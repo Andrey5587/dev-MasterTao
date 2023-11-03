@@ -1,0 +1,69 @@
+<section class="calculation">
+    <div class="container">
+        <h2 class="calculation-title col-lg-7">Получить рассчет стоимости доставки вашего груза</h2>
+        <form  class="calculation-form">
+            <div class="calculation-row">
+                <div class="calculation-column">
+                    <div class="input-box">
+                        <label for="category">Категория товара:</label>
+                        <input type="text" id="category" placeholder="Категория товара">
+                    </div>
+                    <div class="input-box">
+                        <label for="weight">Вес груза (кг):</label>
+                        <input type="number" id="weight" placeholder="Введите вес">
+                    </div>
+                </div>
+                <div class="calculation-column">
+                    <div class="input-box">
+                        <label for="price">Стоимость груза:</label>
+                        <input type="text" id="price" placeholder="Введите стоимость">
+                    </div>
+                    <div class="input-box">
+                        <label for="size">Объем груза (м3):</label>
+                        <input type="number" id="size" placeholder="Введите объем">
+                    </div>
+                </div>
+            </div>
+            <div class="calculation-row">
+                <div class="calculation-column">
+                    <div class="input-box has-checkbox">
+                        <input type="checkbox" id="insurance">
+                        <label for="insurance">Страховка</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" id="customs">
+                        <label for="customs">Таможенное оформление</label>
+                    </div>
+                </div>
+                <div class="calculation-column">
+                    <div class="input-box">
+                        <label for="code">Код ТН ВЭД:</label>
+                        <input type="number" id="code" placeholder="Введите код">
+                    </div>
+                </div>
+            </div>
+            <div class="calculation-row">
+                <div class="calculation-column">
+                    <div class="input-box">
+                        <div id="file-Name">фотография.jpeg</div> 
+                    
+                    
+                        <label for="fileinput">Загрузить фото товара</label>
+                        <input type="file" id="fileinput"name="myfile">
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculation-row">
+                <button class="btn calculation-btn">
+                    Следующий шаг <img src="assets/img/arrow-circle-left.svg" class="icon" alt="arrow">
+                </button>
+                
+            </div>
+            
+        </form>
+        <div class="calculation__img-box">
+            <img src="assets/img/calculation-man.png" alt="decoration">
+        </div>
+    </div>
+</section>
