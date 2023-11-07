@@ -32,3 +32,17 @@ burger.addEventListener('click', function() {
 document.getElementById('fileinput').onchange = function(){
     document.getElementById('file-Name').innerHTML = this.value;
 }
+
+
+const checkButton = document.querySelectorAll('[type="checkbox"]');
+  
+  checkButton.forEach((item, index) => {
+    //index === 0? item.closest('.input-box').classlist.add(has-checkbox): null;
+
+    //item.closest('.calculation-column').classList.add('test-margin');
+    item.closest('.calculation-column').style.marginBottom = "-5px";
+  })
+
+  
+
+

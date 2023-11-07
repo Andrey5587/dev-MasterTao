@@ -13,4 +13,27 @@
         
        
 }
+
+.calculation {
+   .calculation-row {
+    display: flex;
+   }
+   h2{
+    font-size: 36px;
+   }
+
+
+    .calculation-title{
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 85px;
+            height: 2px;
+            background-color: $color-secondary;
+            margin: 14px 12px;
+        }
+    }
+    
+
+}
 }
